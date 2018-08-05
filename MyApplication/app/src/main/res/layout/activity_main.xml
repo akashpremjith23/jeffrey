@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Source"
+        android:layout_margin="10dp"
+
+        />
+</LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/src_lat"
+        android:layout_margin="10dp"
+        android:hint="latitude"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/src_long"
+        android:layout_margin="10dp"
+        android:hint="longitude"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Destination"
+            android:layout_margin="10dp"
+
+            />
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/dest_lat"
+        android:hint="latitude"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:id="@+id/dest_long"
+        android:hint="longitude"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calculate"
+        android:id="@+id/submit"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="The distance between the points is : 0"
+        android:id="@+id/result"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+
+        />
+
+
+
+</LinearLayout>
